@@ -13,7 +13,7 @@ const options = {
       constructor: require('@hapi/catbox-redis'),
       options: {
         partition: 'cache',
-        host: 'your elasticache domain here',
+        host: 'hamster.xbolyb.0001.use1.cache.amazonaws.com',
       }
     }
   }]
