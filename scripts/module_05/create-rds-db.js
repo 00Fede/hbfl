@@ -14,7 +14,7 @@ createSecurityGroup(dbName)
 function createDatabase (dbName, sgId) {
   const params = {
     AllocatedStorage: 5,
-    DBInstanceClass: 'db.t3.micro',
+    DBInstanceClass: 'db.t2.micro',
     DBInstanceIdentifier: dbName,
     VpcSecurityGroupIds: [sgId],
     Engine: 'mysql',
