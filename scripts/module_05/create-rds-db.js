@@ -20,7 +20,8 @@ function createDatabase (dbName, sgId) {
     Engine: 'mysql',
     DBName: dbName,
     MasterUsername: 'admin',
-    MasterUserPassword: 'mypassword'
+    MasterUserPassword: 'mypassword',
+    BackupRetentionPeriod: 0
   }
 
   return new Promise((resolve, reject) => {

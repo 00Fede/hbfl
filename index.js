@@ -13,7 +13,7 @@ const options = {
   //     constructor: require('@hapi/catbox-redis'),
   //     options: {
   //       partition: 'cache',
-  //       host: 'your elasticache domain here',
+  //       host: 'hamster.xbolyb.0001.use1.cache.amazonaws.com',
   //     }
   //   }
   // }]
@@ -63,7 +63,7 @@ const init = async () => {
   // initialize database and start server
   usersInit()
   // Commented out until SQS is configured
-  // .then(() => queueInit())
+  .then(() => queueInit())
   .then(async () => {
     try {
       await server.start()
